@@ -13,6 +13,7 @@ $(function(){
         renderer.setSize( window.innerWidth, window.innerHeight );
         $("#stage").append(renderer.domElement);
         scene = new THREE.Scene();
+        createFog();
         createCamera();
         createLight();
         createFloor();
@@ -35,6 +36,12 @@ $(function(){
         cube.position.z = positionz * 0.5;
         cube.position.x= Math.random() * (500 - (-500)) + (-500);
         cube.position.y= Math.random() * (500 - (-500)) + (-500);
+    }
+
+    function createFog(){
+        scene.fog = new THREE.FogExp2(0x1E2630,0.01);
+        renderer.setClearColor(0xffffff);
+        renderer.setClearColor(scene.fog.color);
     }
 
     function createLight(){
