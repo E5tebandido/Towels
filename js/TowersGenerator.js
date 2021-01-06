@@ -1,5 +1,5 @@
 
-//Esta clase crea todos los elementos threejs.
+
 
 $(function(){
     var scene;
