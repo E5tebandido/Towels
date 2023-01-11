@@ -39,7 +39,7 @@ $(function(){
     }
 
     function createFog(){
-        scene.fog = new THREE.FogExp2(0x1E2630,0.01);
+        scene.fog = new THREE.FogExp2(0x1E2630,0.1);
         renderer.setClearColor(0xffffff);
         renderer.setClearColor(scene.fog.color);
     }
