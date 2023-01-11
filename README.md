@@ -1,6 +1,6 @@
 # Towels
 
-¿When was so easy build towers?
+¿When was so easy building towers?
 
 [![ZapTower](https://cdn3.emoji.gg/emojis/5658-zaptower.png)](https://emoji.gg/emoji/5658-zaptower)
 
