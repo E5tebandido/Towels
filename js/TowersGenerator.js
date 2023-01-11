@@ -13,7 +13,7 @@ $(function(){
         renderer.setSize( window.innerWidth, window.innerHeight );
         $("#stage").append(renderer.domElement);
         scene = new THREE.Scene();
-        createFog();
+        //createFog();
         createCamera();
         createLight();
         createFloor();
@@ -39,7 +39,7 @@ $(function(){
     }
 
     function createFog(){
-        scene.fog = new THREE.FogExp2(0x1E2630,0.1);
+        scene.fog = new THREE.FogExp2(0x1E2630,0.01);
         renderer.setClearColor(0xffffff);
         renderer.setClearColor(scene.fog.color);
     }
